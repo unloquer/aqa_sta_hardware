@@ -1,0 +1,504 @@
+EESchema Schematic File Version 4
+LIBS:aqa_2019-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED:WS2812B D2
+U 1 1 5CAE909A
+P 7089 3072
+F 0 "D2" H 7289 3297 50  0000 R BNN
+F 1 "WS2812B" H 7139 2847 50  0000 L TNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7139 2772 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7189 2697 50  0001 L TNN
+	1    7089 3072
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D1
+U 1 1 5CAEA12F
+P 6192 3072
+F 0 "D1" H 6392 3297 50  0000 R BNN
+F 1 "WS2812B" H 6242 2847 50  0000 L TNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6242 2772 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6292 2697 50  0001 L TNN
+	1    6192 3072
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6492 3072 6789 3072
+$Comp
+L LED:WS2812B D4
+U 1 1 5CAEB6F0
+P 8910 3073
+F 0 "D4" H 9110 3298 50  0000 R BNN
+F 1 "WS2812B" H 8960 2848 50  0000 L TNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8960 2773 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9010 2698 50  0001 L TNN
+	1    8910 3073
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D3
+U 1 1 5CAE9984
+P 7971 3072
+F 0 "D3" H 8171 3297 50  0000 R BNN
+F 1 "WS2812B" H 8021 2847 50  0000 L TNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8021 2772 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8071 2697 50  0001 L TNN
+	1    7971 3072
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7389 3072 7671 3072
+Wire Wire Line
+	8271 3072 8610 3073
+NoConn ~ 9210 3073
+$Comp
+L power:+5V #PWR07
+U 1 1 5CB59802
+P 5442 3075
+F 0 "#PWR07" H 5442 2925 50  0001 C CNN
+F 1 "+5V" H 5442 3215 50  0000 C CNN
+F 2 "" H 5442 3075 50  0001 C CNN
+F 3 "" H 5442 3075 50  0001 C CNN
+	1    5442 3075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4803 4035 4803 4314
+NoConn ~ 4503 5114
+NoConn ~ 4803 5114
+NoConn ~ 4903 5114
+NoConn ~ 4503 4314
+NoConn ~ 4903 4314
+$Comp
+L power:GND #PWR06
+U 1 1 5CBAD72C
+P 4842 3075
+F 0 "#PWR06" H 4842 2825 50  0001 C CNN
+F 1 "GND" H 4842 2925 50  0000 C CNN
+F 2 "" H 4842 3075 50  0001 C CNN
+F 3 "" H 4842 3075 50  0001 C CNN
+	1    4842 3075
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5CAFCC72
+P 4669 1775
+F 0 "#PWR010" H 4669 1625 50  0001 C CNN
+F 1 "+5V" H 4669 1915 50  0000 C CNN
+F 2 "" H 4669 1775 50  0001 C CNN
+F 3 "" H 4669 1775 50  0001 C CNN
+	1    4669 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5CAFD9A2
+P 5723 4676
+F 0 "#PWR09" H 5723 4426 50  0001 C CNN
+F 1 "GND" H 5723 4526 50  0000 C CNN
+F 2 "" H 5723 4676 50  0001 C CNN
+F 3 "" H 5723 4676 50  0001 C CNN
+	1    5723 4676
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5CBC030B
+P 5713 4676
+F 0 "#FLG02" H 5713 4751 50  0001 C CNN
+F 1 "PWR_FLAG" H 5713 4826 50  0000 C CNN
+F 2 "" H 5713 4676 50  0001 C CNN
+F 3 "~" H 5713 4676 50  0001 C CNN
+	1    5713 4676
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5703 4714 5713 4676
+Wire Wire Line
+	5713 4676 5723 4676
+Connection ~ 5713 4676
+$Comp
+L power:+5V #PWR05
+U 1 1 5CB63815
+P 4367 3316
+F 0 "#PWR05" H 4367 3166 50  0001 C CNN
+F 1 "+5V" H 4367 3456 50  0000 C CNN
+F 2 "" H 4367 3316 50  0001 C CNN
+F 3 "" H 4367 3316 50  0001 C CNN
+	1    4367 3316
+	0    1    1    0   
+$EndComp
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 5CAE606E
+P 4903 4714
+F 0 "U1" H 5053 5464 50  0000 L CNN
+F 1 "WeMos_D1_mini" H 4953 3964 50  0000 L CNN
+F 2 "Module:WEMOS_D1_mini_light" H 4903 3564 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 3053 3564 50  0001 C CNN
+	1    4903 4714
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CB64E03
+P 4367 3116
+F 0 "#PWR03" H 4367 2866 50  0001 C CNN
+F 1 "GND" H 4367 2966 50  0000 C CNN
+F 2 "" H 4367 3116 50  0001 C CNN
+F 3 "" H 4367 3116 50  0001 C CNN
+	1    4367 3116
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5CAF21C3
+P 4089 4776
+F 0 "#PWR01" H 4089 4626 50  0001 C CNN
+F 1 "+5V" H 4089 4916 50  0000 C CNN
+F 2 "" H 4089 4776 50  0001 C CNN
+F 3 "" H 4089 4776 50  0001 C CNN
+	1    4089 4776
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4096 4776 4089 4776
+Connection ~ 4096 4776
+Wire Wire Line
+	4103 4814 4096 4776
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5CBBBED9
+P 4096 4776
+F 0 "#FLG01" H 4096 4851 50  0001 C CNN
+F 1 "PWR_FLAG" H 4096 4926 50  0000 C CNN
+F 2 "" H 4096 4776 50  0001 C CNN
+F 3 "~" H 4096 4776 50  0001 C CNN
+	1    4096 4776
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4367 2916
+Wire Wire Line
+	3156 3016 3417 3016
+NoConn ~ 3417 2916
+NoConn ~ 3417 3216
+$Comp
+L aqa:PMS7003 U3
+U 1 1 5CAF4D74
+P 3867 2916
+F 0 "U3" H 3842 2701 50  0000 C CNN
+F 1 "PMS7003" H 3842 2792 50  0000 C CNN
+F 2 "MiscLib:PMS7003" H 3867 2916 50  0001 C CNN
+F 3 "" H 3867 2916 50  0001 C CNN
+	1    3867 2916
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5CAFEF92
+P 4367 3016
+F 0 "#PWR02" H 4367 2766 50  0001 C CNN
+F 1 "GND" H 4367 2866 50  0000 C CNN
+F 2 "" H 4367 3016 50  0001 C CNN
+F 3 "" H 4367 3016 50  0001 C CNN
+	1    4367 3016
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5CAFFBA9
+P 4367 3216
+F 0 "#PWR04" H 4367 3066 50  0001 C CNN
+F 1 "+5V" H 4367 3356 50  0000 C CNN
+F 2 "" H 4367 3216 50  0001 C CNN
+F 3 "" H 4367 3216 50  0001 C CNN
+	1    4367 3216
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5103 4314 5103 4005
+Wire Wire Line
+	5103 4005 6333 4005
+$Comp
+L power:+5V #PWR018
+U 1 1 5CB1882F
+P 6432 4095
+F 0 "#PWR018" H 6432 3945 50  0001 C CNN
+F 1 "+5V" V 6415 4300 50  0000 C CNN
+F 2 "" H 6432 4095 50  0001 C CNN
+F 3 "" H 6432 4095 50  0001 C CNN
+	1    6432 4095
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6333 4005 6332 4095
+Wire Wire Line
+	6232 4095 6233 3931
+Wire Wire Line
+	6233 3931 5203 3931
+Wire Wire Line
+	5203 3931 5203 4314
+Wire Wire Line
+	6133 3864 5003 3864
+Wire Wire Line
+	5003 3864 5003 4314
+Wire Wire Line
+	6132 4095 6133 3864
+Wire Wire Line
+	5303 3962 6033 3962
+Wire Wire Line
+	6033 3962 6032 4095
+Wire Wire Line
+	5303 4314 5303 3962
+Wire Wire Line
+	4703 4314 4703 3909
+$Comp
+L power:GND #PWR019
+U 1 1 5CB17197
+P 6532 4095
+F 0 "#PWR019" H 6532 3845 50  0001 C CNN
+F 1 "GND" V 6527 3866 50  0000 C CNN
+F 2 "" H 6532 4095 50  0001 C CNN
+F 3 "" H 6532 4095 50  0001 C CNN
+	1    6532 4095
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4403 4315 4403 4314
+Connection ~ 4403 4314
+Wire Wire Line
+	4403 4314 4403 3762
+$Comp
+L Connector:Conn_01x08_Female J1
+U 1 1 5CD12394
+P 6432 4295
+F 0 "J1" V 6505 4225 50  0000 C CNN
+F 1 "Conn_01x08_Female" V 6596 4225 50  0000 C CNN
+F 2 "Connectors:1X08" H 6432 4295 50  0001 C CNN
+F 3 "~" H 6432 4295 50  0001 C CNN
+	1    6432 4295
+	0    1    1    0   
+$EndComp
+Connection ~ 6732 4095
+Wire Wire Line
+	6732 4095 6732 4096
+Wire Wire Line
+	6732 3762 6732 4095
+Wire Wire Line
+	4403 3762 6732 3762
+Wire Wire Line
+	4103 4614 4023 4614
+Wire Wire Line
+	4023 4614 4023 3696
+Wire Wire Line
+	4023 3696 6632 3696
+Wire Wire Line
+	6632 3696 6632 4095
+Text Label 4803 4035 0    50   ~ 0
+D3
+Text Label 5003 3957 0    50   ~ 0
+SCK
+Text Label 5103 4095 0    50   ~ 0
+MISO
+Text Label 5203 4186 0    50   ~ 0
+MOSI
+Text Label 5303 4260 0    50   ~ 0
+CS
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 5CD7D28C
+P 4792 2327
+F 0 "J3" V 4730 2139 50  0000 R CNN
+F 1 "Conn_01x03_Female" V 4639 2139 50  0000 R CNN
+F 2 "Connectors:1X03" H 4792 2327 50  0001 C CNN
+F 3 "~" H 4792 2327 50  0001 C CNN
+	1    4792 2327
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 5CD7F73B
+P 4769 2171
+F 0 "J2" V 4615 2319 50  0000 L CNN
+F 1 "Conn_01x03_Female" V 4706 2319 50  0000 L CNN
+F 2 "Connectors:1X03" H 4769 2171 50  0001 C CNN
+F 3 "~" H 4769 2171 50  0001 C CNN
+	1    4769 2171
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4669 1775 4669 1905
+Wire Wire Line
+	4669 1905 4670 1905
+Wire Wire Line
+	4670 1905 4669 1971
+Wire Wire Line
+	4769 1889 4769 1922
+Wire Wire Line
+	4769 1922 4770 1922
+Wire Wire Line
+	4770 1922 4769 1971
+Wire Wire Line
+	4869 1971 4870 1881
+Text Label 4769 1889 1    50   ~ 0
+D1
+Wire Wire Line
+	5056 2605 5870 2604
+Wire Wire Line
+	5870 2604 5873 3072
+Wire Wire Line
+	5873 3072 5892 3072
+Wire Wire Line
+	4692 2527 4692 2611
+Text Label 4692 2611 3    50   ~ 0
+cincovoltios
+Text Label 4892 2607 3    50   ~ 0
+tierra
+Wire Wire Line
+	6192 2772 6192 2720
+Wire Wire Line
+	6192 3372 6192 3416
+Wire Wire Line
+	7089 2772 7089 2714
+Wire Wire Line
+	7971 2772 7971 2692
+Wire Wire Line
+	8910 2773 8910 2698
+Wire Wire Line
+	7089 3372 7089 3429
+Wire Wire Line
+	7971 3372 7971 3432
+Wire Wire Line
+	8910 3373 8910 3425
+Text Label 6192 2720 1    50   ~ 0
+cincovoltios
+Text Label 7089 2714 1    50   ~ 0
+cincovoltios
+Text Label 7971 2692 1    50   ~ 0
+cincovoltios
+Text Label 8910 2698 1    50   ~ 0
+cincovoltios
+Text Label 6192 3416 3    50   ~ 0
+tierra
+Text Label 7089 3429 3    50   ~ 0
+tierra
+Text Label 7971 3432 3    50   ~ 0
+tierra
+Text Label 8910 3425 3    50   ~ 0
+tierra
+Wire Wire Line
+	4932 2615 4892 2615
+Wire Wire Line
+	4892 2527 4892 2615
+Wire Wire Line
+	4981 2648 4932 2615
+$Comp
+L power:GND #PWR0101
+U 1 1 5CDABBD1
+P 4981 2648
+F 0 "#PWR0101" H 4981 2398 50  0001 C CNN
+F 1 "GND" H 4981 2498 50  0000 C CNN
+F 2 "" H 4981 2648 50  0001 C CNN
+F 3 "" H 4981 2648 50  0001 C CNN
+	1    4981 2648
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5CDB5E8E
+P 4628 2570
+F 0 "#PWR012" H 4628 2420 50  0001 C CNN
+F 1 "+5V" H 4628 2710 50  0000 C CNN
+F 2 "" H 4628 2570 50  0001 C CNN
+F 3 "" H 4628 2570 50  0001 C CNN
+	1    4628 2570
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4628 2570 4655 2570
+Wire Wire Line
+	4655 2570 4655 2611
+Wire Wire Line
+	4655 2611 4692 2611
+Text Label 5056 2605 0    50   ~ 0
+D1
+Text Label 4750 2623 0    50   ~ 0
+D1
+Wire Wire Line
+	4792 2527 4792 2542
+Wire Wire Line
+	4792 2542 4750 2542
+Wire Wire Line
+	4750 2542 4750 2623
+$Comp
+L power:GND #PWR011
+U 1 1 5CAFE650
+P 4870 1881
+F 0 "#PWR011" H 4870 1631 50  0001 C CNN
+F 1 "GND" H 4870 1731 50  0000 C CNN
+F 2 "" H 4870 1881 50  0001 C CNN
+F 3 "" H 4870 1881 50  0001 C CNN
+	1    4870 1881
+	-1   0    0    1   
+$EndComp
+Text Label 4703 3909 0    50   ~ 0
+D2
+Text Label 4603 4010 0    50   ~ 0
+D1
+Wire Wire Line
+	4603 4314 4603 4010
+$Comp
+L power:+5V #PWR08
+U 1 1 5CB60E50
+P 5442 3427
+F 0 "#PWR08" H 5442 3277 50  0001 C CNN
+F 1 "+5V" H 5442 3567 50  0000 C CNN
+F 2 "" H 5442 3427 50  0001 C CNN
+F 3 "" H 5442 3427 50  0001 C CNN
+	1    5442 3427
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5142 3375 5142 3427
+$Comp
+L Device:R R1
+U 1 1 5CB55EC0
+P 5292 3427
+F 0 "R1" V 5372 3427 50  0000 C CNN
+F 1 "R" V 5292 3427 50  0000 C CNN
+F 2 "Resistors:0805" V 5222 3427 50  0001 C CNN
+F 3 "~" H 5292 3427 50  0001 C CNN
+	1    5292 3427
+	0    1    1    0   
+$EndComp
+Text Label 5142 3399 0    50   ~ 0
+D3
+Text Label 3156 3016 0    50   ~ 0
+D2
+$Comp
+L Sensor:DHT11 U2
+U 1 1 5CAE88F5
+P 5142 3075
+F 0 "U2" H 4992 3325 50  0000 C CNN
+F 1 "DHT11" H 5292 3325 50  0000 C CNN
+F 2 "MiscLib:DHT11" H 5142 2675 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 5292 3325 50  0001 C CNN
+	1    5142 3075
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
